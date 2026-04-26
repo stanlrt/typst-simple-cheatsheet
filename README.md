@@ -1,77 +1,16 @@
 # `simple-cheatsheet` template
 
+<a href="https://typst.app/universe/package/simple-cheatsheet">
+    <img src="https://img.shields.io/badge/dynamic/xml?url=https%3A%2F%2Ftypst.app%2Funiverse%2Fpackage%2Fsimple-cheatsheet&query=%2Fhtml%2Fbody%2Fdiv%2Fmain%2Fdiv%5B2%5D%2Faside%2Fsection%5B2%5D%2Fdl%2Fdd%5B3%5D&logo=typst&label=Universe&color=%23239DAE" />
+</a>
+
+<br/>
+<br/>
+
 `simple-cheatsheet` is a simple, customisable cheatsheet template for Typst. It produces a compact, multi-column A4 landscape document with colour-coded section headings.
 
-## Setup
+This repository exists only to allow users to submit issues.
 
-```sh
-typst init @preview/simple-cheatsheet:0.1.0
-```
+[Official package page](https://typst.app/universe/package/simple-cheatsheet)
 
-The template uses **Roboto** with a fallback chain (`Arial` → `Helvetica` → `Liberation Sans` → `DejaVu Sans`), so no font installation is required on most systems. For best results, install [Roboto](https://fonts.google.com/specimen/Roboto).
-
-## Usage
-
-```typ
-#import "@preview/simple-cheatsheet:0.1.0": cheatsheet, container
-
-#show: cheatsheet.with(
-  info: (
-    title: "My Subject",
-    authors: ("Jane Doe",),
-  ),
-)
-
-= Section
-#container[
-  == Subsection
-  Content goes here.
-]
-```
-
-## Configuration
-
-All `cheatsheet` parameters and their defaults:
-
-```typ
-#show: cheatsheet.with(
-  info: (
-    title: "",       // Shown in header centre
-    authors: (),     // Shown in header right; string or array of strings
-  ),
-  headers: (
-    align: center,   // Alignment of level-1 headings
-    numbering: true, // Show numbering on headings
-  ),
-  layout: (
-    font-size: 6pt,
-    margin: (x: 10pt, y: 20pt),
-    columns: (
-      count: 4,
-      gutter: 4pt,
-    ),
-  ),
-)
-```
-
-### `container`
-
-Wrap content in a coloured border box that matches the current section colour:
-
-```typ
-#container(alignment: start)[
-  Your content here.
-]
-```
-
-## Feature requests & problems
-
-Feel free to [request features or report problems here](https://github.com/stanlrt/typst-simple-cheatsheet/issues).
-
-## License
-
-MIT-0 — see [LICENSE](LICENSE).
-
-## Credits
-
-This template is based on [boxed-sheet](https://typst.app/universe/package/boxed-sheet/), but the code was heavily modified.
+[Code](https://github.com/stanlrt/typst-packages-fork/tree/main/packages/preview/simple-cheatsheet)
